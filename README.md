@@ -27,4 +27,4 @@ or
 * docker container
 
 ## cloud application
-The running applicaton can be found here: https://bsenst-capstone2-predict-service-utilisation-appapp-5tnr6y.streamlit.app/
+The running application can be found here: https://bsenst-capstone2-predict-service-utilisation-appapp-5tnr6y.streamlit.app/
