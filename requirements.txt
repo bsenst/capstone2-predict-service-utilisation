@@ -5,3 +5,4 @@ altair
 scikit-learn
 simpy
 bentoml
+openpyxl
