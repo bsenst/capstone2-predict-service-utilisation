@@ -17,7 +17,9 @@ Run `bentoml serve service:svc` to serve the model with bentoml.
 Run `streamlit run app/app.py` to display the streamlit frontend and explore the model and the use case.
 
 ## dependencies & environments
-`python -m venv venv -r requirements.txt`
+`python -m venv venv`
+`source venv/bin/activate`
+`pip install -r requirements.txt`
 or
 `pipenv install`
 
