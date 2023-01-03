@@ -2,30 +2,29 @@
 linear regression model to predict service demand based on public NHS emergency department utilisation data from 2019-2021
 
 ## problem description
-* ...
+* Ressource allocation is essential for the healthcare system. Emergency services are expected to respond to unforeseeable events. This project creates a polynomial regression model to estimate the number of patient arrivals per hour of the day (output) from daily total visits in the past (input).
 
 ## exploratory data analysis
 * Explored two datasets (Dataverse and NHS).
-* The data does not contain all features.
+* The data does not contain all feature details (high granularity).
 
 ## model training
-* The models have been evaluated using RMSE and line plots.
+* Multiple polynomial regression models have been evaluated using RMSE and line plots.
 
-## train & test scripts
-* ...
+## train & test scripts for reproducibility, deployment
+Run `python train_test.py` to reproduce the model.
+Run `bentoml serve service:svc` to serve the model with bentoml.
+Run `streamlit run app/app.py` to display the streamlit frontend and explore the model and the use case.
 
-## reproducibility
-* ...
-
-## deployment
-* bentoml
-
-## dependencies
-* requirements.txt
+## dependencies & environments
+`python -m venv venv`
+`source venv/bin/activate`
+`pip install -r requirements.txt`
+or
+`pipenv install`
 
 ## container
 * docker container
 
 ## cloud application
-* model deployment
-* https://bsenst-capstone2-predict-service-utilisation-appapp-5tnr6y.streamlit.app/
+The running application can be found here: https://bsenst-capstone2-predict-service-utilisation-appapp-5tnr6y.streamlit.app/
