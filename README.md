@@ -28,4 +28,4 @@ linear regression model to predict service demand based on public NHS emergency 
 
 ## cloud application
 * model deployment
-* streamlit app
+* https://bsenst-capstone2-predict-service-utilisation-appapp-5tnr6y.streamlit.app/
