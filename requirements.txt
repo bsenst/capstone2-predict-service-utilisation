@@ -2,6 +2,6 @@ pandas
 numpy
 matplotlib
 altair
-sklearn
+scikit-learn
 simpy
 bentoml
