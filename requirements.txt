@@ -6,3 +6,4 @@ scikit-learn
 simpy
 bentoml
 openpyxl
+streamlit
