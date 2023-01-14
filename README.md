@@ -17,14 +17,15 @@ Run `bentoml serve service:svc` to serve the model with bentoml.
 Run `streamlit run app/app.py` to display the streamlit frontend and explore the model and the use case.
 
 ## dependencies & environments
+
 `python -m venv venv`
+
 `source venv/bin/activate`
-`pip install -r requirements.txt`
-or
-`pipenv install`
+
+`pip install -r requirements.txt` or `pipenv install`
 
 ## container
-* docker container
+- [ ] docker container
 
 ## cloud application
 The running application can be found here: https://bsenst-capstone2-predict-service-utilisation-appapp-5tnr6y.streamlit.app/
