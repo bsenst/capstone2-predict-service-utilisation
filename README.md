@@ -6,26 +6,43 @@ linear regression model to predict service demand based on public NHS emergency 
 
 ## exploratory data analysis
 * Explored two datasets (Dataverse and NHS).
-* The data does not contain all feature details (high granularity).
 
 ## model training
 * Multiple polynomial regression models have been evaluated using RMSE and line plots.
 
-## train & test scripts for reproducibility, deployment
-Run `python train_test.py` to reproduce the model.
-Run `bentoml serve service:svc` to serve the model with bentoml.
-Run `streamlit run app/app.py` to display the streamlit frontend and explore the model and the use case.
+## reproducibility
+To clone the repository run `git clone https://github.com/bsenst/capstone2-predict-service-utilisation` and move to the folder with `cd capstone2-predit-service-utilisation`.
 
-## dependencies & environments
+### dependencies & environments
+After cloning the repository create an environment and install the dependencies with the following steps:
 
 `python -m venv venv`
 
 `source venv/bin/activate`
 
-`pip install -r requirements.txt` or `pipenv install`
+`pip install -r requirements.txt`
 
-## container
-- [ ] docker container
+or using pipenv with:
+
+`pipenv install`
+
+### train & test scripts for reproducibility, deployment
+To run the scripts go to the scripts folder with `cd scripts` and run `python train_test.py` to reproduce the model or `bentoml serve service:svc` to serve the model with bentoml.
+
+![image](https://user-images.githubusercontent.com/8211411/212476549-a5163503-bf55-4643-86bf-86598d19a94c.png)
+
+To run the frontend go to the main folder via `cd ..` and run `streamlit run app/app.py` to display the streamlit frontend and explore the model and the use case.
+
+### container
+Build the Docker container with:
+
+`docker build -t ed-volume-prediction .`
+
+Run the Docker container with:
+
+`docker run --rm --name ed-volume-prediction`
 
 ## cloud application
 The running application can be found here: https://bsenst-capstone2-predict-service-utilisation-appapp-5tnr6y.streamlit.app/
+
+![image](https://user-images.githubusercontent.com/8211411/212476706-a526f917-dd9f-4d38-8179-28db19212108.png)
